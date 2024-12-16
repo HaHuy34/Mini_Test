@@ -11,6 +11,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- link animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Toast JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+
     <title>MINI SHOP</title>
 </head>
 
@@ -194,22 +198,22 @@
                     </ul>
                 </div>
                 <div class="img">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./assets/images/logo.png" alt="logo" class="logo">
                     </a>
                 </div>
                 <div class="search-account">
-                    <form class="search">
+                    <div class="search">
                         <div class="button-search"><i class='bx bx-search'></i></div>
-                        <input type="text" class="search-main" placeholder="Tìm kiếm sản phẩm">
-                    </form>
+                        <input type="text" class="search-main" placeholder="Tìm kiếm sản phẩm" id="searchInput">
+                    </div>
 
                     <div class="account">
                         <ul>
                             <li><i class='bx bx-headphone'></i></li>
                             <li><a href="./DangNhap.html"><i class='bx bx-user'></i></li></a>
-                            <li class="count-number" id="countnum" style="cursor: pointer;"><i class='bx bx-shopping-bag'></i> <span
-                                class="number-shopping">0</span></li>
+                            <li class="count-number" id="countnum" style="cursor: pointer;"><i
+                                    class='bx bx-shopping-bag'></i> <span class="number-shopping">0</span></li>
                         </ul>
                     </div>
                 </div>
@@ -226,7 +230,7 @@
 
             <div class="shopping-cart-product">
 
-                <div class="cart-shopping-item">
+                <!-- <div class="cart-shopping-item">
                     <div class="img-card-item">
                         <img src="./assets/images/AoDai010.webp" alt=""> 
                     </div>
@@ -254,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="bot-shopping-cart-icon">
@@ -321,9 +325,48 @@
                 </div>
 
                 <div class="row pr-rlisst">
-                    
+                    <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-main">
+                            <a href="SanPham.html" class="card-image-main">
+                                <div href="#" class="card-image-1">
+                                    <img src="./assets/images/AoDai010.webp" alt="Ảnh 1">
+                                </div>
+                                <div href="#" class="card-image-2">
+                                    <img src="./assets/images/AoDai011.webp" alt="Ảnh 1">
+                                </div>
+                            </a>
+                            <div class="card-title">
+                                <div class="style-card">
+                                    <div class="color">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <i class='bx bx-heart'></i>
+                                </div>
+                                <a class="name-card" href="SanPham.html">Áo dài Xuân Yên</a>
+                                <div class="price-product">
+                                    <span>1.090.000<sup>đ</sup></span>
+                                    <a class="add-to-cart">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-new">NEW</div>
+                            <div class="style-add">
+                                
+                                <a href="" class="add-to-ca add-to-cart">
+                                    <i class='bx bx-cart'></i> Thêm vào giỏ
+                                </a>
+                                <a href="SanPham.html?id=${product.id}" style="color: #000;" class="detail-plus">
+                                    <i class='bx bx-plus'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
 
                 </div>
+                <!-- Phân trang -->
+                <div class="pagination-container"></div>
 
                 <div class="see-all">
                     <h3>Xem tất cả</h3>
@@ -440,7 +483,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href= "mailto:hoangtrangtkt@gmail.com">
+                                <a href="mailto:hoangtrangtkt@gmail.com">
                                     <img src="./assets/images/google.png" alt="ic_gg" class="social-network">
                                 </a>
                             </li>
@@ -518,7 +561,7 @@
                                 <a href="tel:0333262319">Hotline</a>
                             </li>
                             <li>
-                                <a href= "mailto:hoangtrangtkt@gmail.com">Email</a>
+                                <a href="mailto:hoangtrangtkt@gmail.com">Email</a>
                             </li>
                             <li>
                                 <a href="#">Live Chat</a>
@@ -585,6 +628,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>\
     <script src="./assets/main/main.js"></script>
+
 
 </body>
 

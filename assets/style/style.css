@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     font-optical-sizing: auto;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
@@ -22,12 +23,26 @@ img {
 
 ul {
     padding: 0;
+    margin-bottom: 0 !important;
 }
 
 .container-main {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999999999999999999999999999999999999999999999;
+    background-color: #ffff;
+}
+
+.slider {
+    margin-top: 80px;
 }
 
 .menu-main,
@@ -46,7 +61,7 @@ ul {
 }
 
 .menu {
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 15px;
     padding: 15px 0;
     font-weight: 600;
@@ -62,7 +77,7 @@ img.logo {
 }
 
 .search {
-    position:relative;
+    position: relative;
     display: flex;
 }
 
@@ -200,8 +215,9 @@ swiper-container.mySwiper {
 }
 
 .card-main {
-    position:relative;
+    position: relative;
     height: auto;
+    height: 100%;
 }
 
 .card-image-2 {
@@ -230,7 +246,7 @@ swiper-container.mySwiper {
     color: #3e3e3f;
 }
 
-.style-card i{
+.style-card i {
     font-size: 18px;
     color: #6c6d70;
 }
@@ -289,7 +305,8 @@ swiper-container.mySwiper {
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 17px solid #AC2F33;;
+    border-top: 17px solid #AC2F33;
+    ;
     border-left: 7px solid transparent;
     bottom: -16px;
     left: 0px;
@@ -379,38 +396,38 @@ img.sale1 {
     border-bottom-right-radius: 45px;
 }
 
-.main-footer{
+.main-footer {
     display: flex;
-    margin:60px 0 25px 0;
+    margin: 60px 0 25px 0;
 }
 
-.left-footer{
+.left-footer {
     width: 300px;
     margin-right: 70px;
 }
 
 .top-left,
-.list-social{
+.list-social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.list-social{
+.list-social {
     margin: 24px 0 32px 0;
 }
 
-.social-network{
+.social-network {
     width: 30px;
     height: auto;
     margin-right: 25px;
 }
 
-.hotline{
+.hotline {
     text-align: center;
 }
 
-.hotline a{
+.hotline a {
     background: #221F20;
     border-radius: 16px 0px;
     font-weight: 600;
@@ -421,7 +438,7 @@ img.sale1 {
     font-family: 'Roboto', sans-serif;
 }
 
-h5{
+h5 {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -429,12 +446,12 @@ h5{
     margin-bottom: 20px;
 }
 
-.center-footer{
+.center-footer {
     display: flex;
     justify-content: center;
 }
 
-.left-center{
+.left-center {
     margin-right: 70px;
 }
 
@@ -446,12 +463,12 @@ h5{
     display: block;
 }
 
-.right-footer{
+.right-footer {
     width: 321px;
     margin-left: 0px;
 }
 
-.register-form{
+.register-form {
     background: #FFFFFF;
     border: 6px solid #E7E8E9;
     border-radius: 56px 0px;
@@ -459,7 +476,7 @@ h5{
     margin-bottom: 32px;
 }
 
-.title-footer{
+.title-footer {
     width: 221px;
     font-weight: 600;
     font-size: 20px;
@@ -468,11 +485,11 @@ h5{
     margin-bottom: 5px;
 }
 
-.registration_card{
+.registration_card {
     display: flex;
 }
 
-.registration_card input{
+.registration_card input {
     width: 155px;
     border: 0;
     border-bottom: 1px solid #e7e8e9;
@@ -496,12 +513,12 @@ h5{
     padding: 12px 27px;
 }
 
-img.link-white{
+img.link-white {
     width: 178px;
     height: 51px;
 }
 
-h6{
+h6 {
     margin-top: 30px !important;
     font-size: 16px !important;
     color: #57585A !important;
@@ -532,7 +549,7 @@ h6{
     z-index: 10;
 }
 
-.list-menu{
+.list-menu {
     display: flex;
 }
 
@@ -541,25 +558,25 @@ h6{
     margin-right: 70px;
 }
 
-h2{
-    
+h2 {
+
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 16px !important;
-    color: #221F20 ;
+    color: #221F20;
     display: block !important;
     margin-bottom: 24px !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.list-menu ul li a{
+.list-menu ul li a {
     text-decoration: none;
-    font-size: 14px ;
-    line-height: 16px ;
+    font-size: 14px;
+    line-height: 16px;
     color: #67696b !important;
-    display: block ;
-    margin-bottom: 16px ; 
-    font-weight: 1 ;   
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 1;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -624,7 +641,7 @@ h2{
 }
 
 .img-card-item {
-    width: 64px ;
+    width: 64px;
     height: 96px;
 }
 
@@ -640,11 +657,11 @@ h2{
     width: 286px;
 }
 
-.style-cart-item{
+.style-cart-item {
     display: flex;
 }
 
-.style-color-cart{
+.style-color-cart {
     display: flex;
     margin-right: 18px;
     font-size: 14px;
@@ -653,7 +670,7 @@ h2{
     margin-bottom: 12px;
 }
 
-.style-size-cart{
+.style-size-cart {
     display: flex;
     margin-right: 18px;
     font-size: 14px;
@@ -669,14 +686,14 @@ h2{
     width: 100%;
 }
 
-.quantity{
+.quantity {
     display: flex;
     border: 1px solid #e7e8e9;
     border-radius: 8px 0px;
 }
 
 .minus,
-.plus{
+.plus {
     background: #FFFFFF;
     border: 1px solid #E7E8E9;
     border-radius: 8px 0px;
@@ -690,7 +707,7 @@ h2{
     padding-bottom: 4px;
 }
 
-.value-display{
+.value-display {
     font-size: 14px;
     color: #57585A;
     font-weight: normal;
@@ -708,28 +725,29 @@ h2{
     cursor: not-allowed;
 }
 
-.quantity button:focus, .quantity .value-display:focus {
+.quantity button:focus,
+.quantity .value-display:focus {
     outline: 2px solid #007bff;
 }
 
 .total-price-quan {
-font-weight: 600;
-font-size: 16px;
-line-height: 16px;
-text-decoration: none;
-color: #AC2F33;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #AC2F33;
 }
 
-.bot-shopping-cart-icon{
+.bot-shopping-cart-icon {
     position: absolute;
     bottom: 5px;
     left: 0;
     width: 100%;
 }
 
-.total-price-shopping {  
+.total-price-shopping {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     width: 100%;
     font-size: 14px;
     line-height: 24px;
@@ -737,7 +755,7 @@ color: #AC2F33;
     margin-bottom: 16px;
     padding: 0 24px;
     border-bottom: 1px solid #F6F7F8;
-    margin-left:auto
+    margin-left: auto
 }
 
 .total-price-shopping a {
@@ -748,7 +766,7 @@ color: #AC2F33;
     text-align: right;
 }
 
-.view-cart{
+.view-cart {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -766,7 +784,7 @@ color: #AC2F33;
     background: #ffffff !important;
 }
 
-.login-card{
+.login-card {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -783,3 +801,111 @@ color: #AC2F33;
     color: #FFFFFF !important;
     background: #0A0A0B;
 }
+
+.image-cart-2 {
+    display: none;
+    transition: all .3s ease-in-out;
+
+}
+
+.cart-main:hover .image-cart-2 {
+    display: block;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.cart-main:hover .image-cart-1 {
+    display: none;
+    cursor: pointer;
+}
+
+/* Chi tiết sản phẩm */
+
+
+.cart-main {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-main:hover .style-add{
+    top: 0; 
+    transition: all .3s ease-in-out;
+}
+
+.cart-main:hover .cart-title{
+    opacity: 0;
+}
+
+.bx-plus {
+    /* position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 40px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.detail-plus {
+    /* display: none; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .cart-main:hover .detail-plus{
+    display: block;
+}
+
+
+.bx-plus:hover {
+    background-color: red;
+    color: #fff;
+} */
+
+.style-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.add-to-ca {
+    color: #fff !important;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.add-to-ca i {
+    font-size: 23px;
+}
+
+.cart-main:hover .add-to-ca{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

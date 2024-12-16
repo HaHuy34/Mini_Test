@@ -33,3 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
       swiper: swiper,
     },
   });
+
+  // Detail Product
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    // Lấy ID sản phẩm từ URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    if (!productId) {
+        alert('Sản phẩm không hợp lệ.');
+        return;
+    }
+
+    // API lấy thông tin chi tiết sản phẩm
+    const apiUrl = `https://api-mini-shop.vercel.app/Female/${productId}`;
+    console.log(apiUrl);
+    
+
+    try {
+        // Fetch data từ API
+        const response = await fetch(apiUrl);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const product = await response.json();
+        console.log(product);
+        
+        
+
+        // Hiển thị chi tiết sản phẩm
+        // Slider main
+        document.getElementById('imageperent').src = product.image;
+        document.getElementById('imageChild01').src = product.imageChild.imageChild01;
+        document.getElementById('imageChild02').src = product.imageChild.imageChild02;
+        document.getElementById('imageChild03').src = product.imageChild.imageChild03;
+        document.getElementById('imageChild04').src = product.imageChild.imageChild01;
+        // Slider Child
+        document.getElementById('imageperent01').src = product.image;
+        document.getElementById('imageChild001').src = product.imageChild.imageChild01;
+        document.getElementById('imageChild002').src = product.imageChild.imageChild02;
+        document.getElementById('imageChild003').src = product.imageChild.imageChild03;
+        document.getElementById('imageChild004').src = product.imageChild.imageChild01;
+        //Detail Product
+        document.getElementById('productName').textContent = product.title;
+        document.getElementById('code').textContent = product.code;
+        document.getElementById('color-pr').textContent = product.color;
+        document.getElementById('price-product').textContent = `${product.price.toLocaleString('vi-VN')} đ`;
+        document.getElementById('pr-description').textContent = product.description;
+
+
+
+        
+    } catch (error) {
+        console.error("Error fetching product details:", error);
+    }
+});
