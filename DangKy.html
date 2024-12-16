@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/DangKy.css">
+    <link rel="shortcut icon" href="https://image-mini-shop.vercel.app/logowebsite1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Đăng ký tài khoản | MINI SHOP</title>
+</head>
+
+<body>
+        <div id="header"></div>
+    <main>
+        <div class="container-main">
+            <h1 class="text-center">Đăng Ký</h1>
+            <form action="" method="POST" class="register-main">
+                <div class="register">
+                    <p class="text-top">Thông tin khách hàng</p>
+
+                    <div class="input-card-main">
+                        <div class="input-card" style="margin-right: 30px;">
+                            <p>Họ:</p>
+                            <input class="input-card-1" type="text" name="firstname" placeholder="Họ..." required>
+                            <p>Email:</p>
+                            <input class="input-card-1" type="text" name="email" placeholder="Email..." required>
+                            <p>Ngày sinh:</p>
+                            <input class="input-card-1" type="text" name="birthday" placeholder="Ngày sinh..." required>
+                            <p>Tỉnh/TP:</p>
+                            <input class="input-card-1" type="text" name="birthday" placeholder="Tỉnh/TP..." required>
+                        </div>
+                        <div class="input-card">
+                            <p>Tên:</p>
+                            <input class="input-card-1" type="text" name="display_name" placeholder="Tên..." required>
+                            <p>Điện thoại:</p>
+                            <input class="input-card-1" type="text" name="contact" placeholder="Điện thoại..." required>
+                            <p>Giới tính:</p>
+                            <select name="gender" class="input-card-1" required>
+                                <option value="">Chọn Giới Tính</option>
+                                <option value="Nữ">Nữ</option>
+                                <option value="Nam">Nam</option>
+                                <option value="Khác">Khác</option>
+                            </select>
+                            <p>Quận/Huyện:</p>
+                            <input class="input-card-1" type="text" name="contact" placeholder="Quận/Huyện..." required>
+                        </div>
+                    </div>
+                    <p>Phường/Xã:</p>
+                    <input class="input-card-1" type="text" name="contact" placeholder="Phường/Xã..." required>
+                    <p>Địa chỉ:</p>
+                    <input class="input-card-1" type="text" name="address" placeholder="" required
+                        style="height: 80px;">
+
+                </div>
+                <div class="register">
+                    <p class="text-top">Thông tin mật khẩu</p>
+
+                    Mật khẩu:
+                    <input class="input-card-1" type="password" name="password" placeholder="Mật khẩu..." required>
+                    Nhập lại mật khẩu:
+                    <input class="input-card-1" type="password" name="password" placeholder="Nhập lại mật khẩu..."
+                        required>
+                    <div style="display: flex;">
+                        <button type="button" class="check-button" onclick="toggleCheckmark(this)">
+                            <span class="checkmark"><i class='bx bx-check'></i></span></button>
+                        <span style="margin-top: 5px;">
+                            Đồng ý với các
+                            <a style="color: #f31f1f" href="">điều khoản</a>
+                            của Mini
+                        </span>
+                    </div>
+                    <input type="submit" name="submit" value="Đăng Ký" class="black-button">
+                    <script>
+                        function toggleCheckmark(button) {
+                            button.classList.toggle('checked');
+                        }
+                    </script>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/main/DangKy.js"></script>
+    <script src="./assets/main/header_footer.js"></script>
+</body>
+
+</html>

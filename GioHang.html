@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/GiohHang.css">
+    <link rel="shortcut icon" href="https://image-mini-shop.vercel.app/logowebsite1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Giỏ Hàng | MINI SHOP</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="shopping-cart-main">
+            <div class="shopping-cart-left">
+                <div class="status-bar">
+                    <div class="bar"><hr style="border: 2px solid #e7e8e9;width: 768px;"/></div>
+                    <ul>
+                        <li><div class="dot" style="background-color: black;border: black;"></div>Giỏ hàng </li>
+                        <li><div class="dot"></div>Đặt hàng</li>
+                        <li><div class="dot"></div>Thanh toán</li>
+                        <li><div class="dot"></div>Hoàn thành đơn</li>
+                    </ul>
+                </div>
+                <div class="cart-list">
+                    <a class="cart-title">Giỏ hàng của bạn <b><span class="cart-total">1</span> Sản Phẩm</b></a>
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th style="padding-left:0 !important ;">Tên Sản phẩm</th>
+                                <th>Chiết khấu</th>
+                                <th>Số lượng</th>
+                                <th>Tổng tiền</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 375px;">
+                                    <div class="cart-product">
+                                        <div class="cart-product-img">
+                                            <a href="./SanPham.html">
+                                                <img src="./assets/images/AoDai010.webp" alt="Áo dài Xuân Yên">
+                                            </a>
+                                        </div>
+                                        <div class="cart-product-content">
+                                            <a href="./SanPham.html">
+                                                <p style="color: #6c6d70">
+                                                    Áo dài Xuân Yên
+                                                </p>
+                                            </a>
+                                            <div style="display: flex; font-size: 14px; margin-top: 16px;">
+                                                <p>Màu sắc: <span>Trắng ngà</span></p>
+                                                <p style="margin-left: 15px;">Size: <span>l</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart-sale">
+                                    <p>-687000đ</p>
+                                    <p class="cart-sale-item">
+                                        (-30%)
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="cart-box">
+                                        <div class="count-gh">
+                                            <a class="count-gh-1">-</a>
+                                            <span class="value-display-1">1</span>
+                                            <a class="count-gh-1">+</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart-box">1603000đ</div>
+                                </td>
+                                <td>
+                                    <div class="cart-box">
+                                        <a><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="white-button" onclick="goBack()">
+                    <i class='bx bx-left-arrow-alt'></i>
+                    Tiếp tục mua hàng
+                </button>
+            </div>
+            <div class="shopping-cart-right">
+                <div class="cart-summary">
+                    <a class="cart-title">Tổng tiền giỏ hàng</a>
+                    <div class="cart-summary-item">
+                        <p>Tổng sản phẩm</p>
+                        <p>
+                            1
+                        </p>
+                    </div>
+                    <div class="cart-summary-item">
+                        <p>Tổng tiền hàng</p>
+                        <p >
+                            2.290.000đ
+                        </p>
+                    </div>
+                    <div class="cart-summary-item">
+                        <p>Thành tiền</p>
+                        <p>
+                            <b class="order-price-total">
+                                1.603.000đ
+                            </b>
+                        </p>
+                    </div>
+                    <div class="cart-summary-item">
+                        <p>Tạm tính</p>
+                        <p>
+                            <b class="order-price-total">
+                                1.603.000đ
+                            </b>
+                        </p>
+                    </div>
+                    <hr style="border: 1px solid #e7e8e9;"/>
+                 
+                </div>
+                <a href="DatHang.html" class="black-button">
+                    ĐẶT HÀNG
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main/GioHang.js"></script>
+</body>
+
+</html>

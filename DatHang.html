@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/DatHang.css">
+    <link rel="shortcut icon" href="https://image-mini-shop.vercel.app/logowebsite1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Đặt Hàng | MINI SHOP</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="order-main">
+            <div class="order-left">
+                <div class="status-bar">
+                    <div class="bar">
+                        <hr style="border: 2px solid #e7e8e9;width: 768px;" />
+                    </div>
+                    <div class="bar">
+                        <hr style="border: 2px solid #000000;width: 260px;" />
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="dot" style="background-color: black;border: black;"></div>Giỏ hàng
+                        </li>
+                        <li>
+                            <div class="dot" style="background-color: black;border: black;"></div>Đặt hàng
+                        </li>
+                        <li>
+                            <div class="dot"></div>Thanh toán
+                        </li>
+                        <li>
+                            <div class="dot"></div>Hoàn thành đơn
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="status-order">
+                    <div class="input-card-main">
+                        <a class="order-title">Địa chỉ giao hàng</a>
+                        <div class="login-register">
+                            <a href="DangNhap.html" class="black-button" style="width:190px ;margin-right: 50px;">ĐĂNG NHẬP</a>
+                            <a href="DangKy.html" class="white-button" style="width:190px ;">ĐĂNG KÝ</a>
+                        </div>
+                        <p class="note">Đăng nhập/ Đăng ký tài khoản để được tích điểm và nhận thêm nhiều ưu đãi từ Mini
+                            Shop.</p>
+                        <div class="card-Tich">
+                            <div class="Tich">
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <p>Địa chỉ</p>
+                        </div>
+                        <div class="input-card">
+                            <input class="input-card-1" style="margin-right:30px ;" type="text" name="firstname"
+                                placeholder="Họ tên..." required>
+                            <input class="input-card-1" type="text" name="contact" placeholder="Số điện thoại..."
+                                required>
+                        </div>
+                        <div class="input-card">
+                            <input class="input-card-1" style="margin-right:30px ;" type="text" name="birthday"
+                                placeholder="Tỉnh/Thành phố..." required>
+                            <input class="input-card-1" type="text" name="contact" placeholder="Quận/Huyện..." required>
+                        </div>
+                        <input class="input-card-1" type="text" name="contact" placeholder="Phường/Xã..." required>
+                        <input class="input-card-1" type="text" name="address" placeholder="Địa chỉ..." required>
+                    </div>
+                    <div style="padding: 0 15px 15px 15px;width: 357px;">
+                        <a class="order-title">Phương thức giao hàng</a>
+                        <div class="delivery-method">
+                            <div class="Tich">
+                                <i class='bx bx-check'></i>
+                            </div>
+                            <p>Chuyển phát nhanh</p>
+                        </div>
+                        <p class="order-title">Bạn có muốn nhận hoá đơn </p> 
+                        <div style="display: flex;">
+                        <p class="order-title">VAT không ?</p> 
+                        <button type="button" class="check-button" onclick="toggleCheckmark(this)">
+                            <span class="checkmark"><i class='bx bx-check'></i></span></button>
+                    </div>
+                </div>
+                    <script>
+                        function toggleCheckmark(button) {
+                            button.classList.toggle('checked');
+                        }
+                    </script>
+                </div>
+
+
+
+
+
+                <button class="black-button">
+                    Hiển thị sản phẩm
+                    <i class='bx bx-arrow-to-bottom'></i>
+                </button>
+
+                <div class="cart-list">
+                    <a class="cart-title">Giỏ hàng của bạn <b><span class="cart-total">1</span> Sản Phẩm</b></a>
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th style="padding-left:0 !important ;">Tên Sản phẩm</th>
+                                <th>Chiết khấu</th>
+                                <th>Số lượng</th>
+                                <th>Tổng tiền</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 375px;">
+                                    <div class="cart-product">
+                                        <div class="cart-product-img">
+                                            <a href="./SanPham.html">
+                                                <img src="./assets/images/AoDai010.webp" alt="Áo dài Xuân Yên">
+                                            </a>
+                                        </div>
+                                        <div class="cart-product-content">
+                                            <a href="./SanPham.html">
+                                                <p style="color: #6c6d70">
+                                                    Áo dài Xuân Yên
+                                                </p>
+                                            </a>
+                                            <div style="display: flex; font-size: 14px; margin-top: 16px;">
+                                                <p>Màu sắc: <span>Trắng ngà</span></p>
+                                                <p style="margin-left: 15px;">Size: <span>l</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart-sale">
+                                    <p>-687000đ</p>
+                                    <p class="cart-sale-item">
+                                        (-30%)
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="cart-box">
+                                        <div class="count-gh">
+                                            <a class="count-gh-1">-</a>
+                                            <span class="value-display-1">1</span>
+                                            <a class="count-gh-1">+</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart-box">1603000đ</div>
+                                </td>
+                                <td>
+                                    <div class="cart-box">
+                                        <a><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin: 32px 0 16px 0;">
+                    <a href="GioHang.html" class="white-button">
+                        <i class='bx bx-left-arrow-alt'></i>
+                        Quay lại giỏ hàng
+                    </a>
+                </div>
+            </div>
+
+            <div class="order-right">
+                <div class="order-summary">
+                    <a class="order-title">Tóm tắt đơn hàng</a>
+                    <div class="order-summary-item">
+                        <p>Tổng tiền hàng</p>
+                        <p>
+                            2.290.000đ
+                        </p>
+                    </div>
+                    <div class="order-summary-item">
+                        <p>Tạm tính</p>
+                        <p>
+                            2.290.000đ
+                        </p>
+                    </div>
+                    <div class="order-summary-item">
+                        <p>Phí vận chuyển</p>
+                        <p>
+                            30.000đ
+                        </p>
+                    </div>
+
+                    <div class="order-summary-item">
+                        <p>Tiền thanh toán</p>
+                        <p>
+                            <b class="order-price-total">
+                                2.183.000đ
+                            </b>
+                        </p>
+                    </div>
+                    <hr style="border: 1px solid #e7e8e9;" />
+
+                </div>
+                <a class="black-button">
+                    Hoàn Thành
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main/DatHang.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+body{    
+    font-family: 'Montserrat', sans-serif;
+}
+.product-main{
+    display: flex;  
+    margin-top: 46px;
+    width: 100%;
+    height: auto;    
+}
+.list-product-img{
+    display: flex;
+    width: 50%;
+    min-width: 488px;
+    max-height: 795px;
+}
+.product-img-1 {
+    width: 79.25%; 
+    margin: 0 15px;   
+}
+
+.swiper-slide{
+    width: 100%;
+    aspect-ratio:1/1.5 !important;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e7e8e9;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.image-container img {
+width: 100%;
+height: auto;
+/* position: absolute;
+top: 0;
+left: 0; */
+transition: transform 0.2s ease, top 0.2s ease, left 0.2s ease;
+}
+
+.image-container {
+cursor: crosshair;
+}
+
+.image-container:hover img {
+transform: scale(1.5);
+}
+
+
+
+
+.product-title{
+    width: 50%;
+    aspect-ratio:0.84/1
+}
+
+.product-title{
+    padding-left:8.5% ;
+}
+
+.title-sp{
+    font-weight: 600 ;
+    font-size: 30px ;
+    line-height: 32px ;
+    color: #221f20 ;
+    text-transform: uppercase;
+}
+
+.sub-code{
+    margin-top: 16px ;
+}
+
+.price-sp{
+    margin-top:24px;
+    font-weight: 600 ;
+    font-size: 26px;
+    line-height: 32px;
+    color: #221f20;
+}
+
+.color-sp{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #221f20;
+    margin-bottom: 0;
+}
+
+.list-color{
+    display: flex;
+    margin-top: 12px;
+}
+
+.item-color{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    background-color: #C6AE7E;
+    border-color: #C6AE7E;
+}
+
+.list-size ul{
+    margin-top: 12px;
+    display: flex;
+}
+
+.size{
+    width: 50px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e7e8e9;
+    margin-right: 15px;
+}
+
+.size-tables{
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    cursor: pointer;
+}
+
+.size-tables:hover .sup-size-tables {
+    display: block;
+}
+
+.sup-size-tables{
+    position: absolute;
+    display: none;
+}
+
+.sup-size-tables ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    border: 1px solid #e7e8e9;
+    background-color:#f4f8ff;
+}
+
+.quantity-sp{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.count-sp{
+    display: flex;
+    margin-left: 15px;
+    border: 1px solid #e7e8e9;
+    border-radius: 16px 0px;
+}
+
+.count-sp-1{
+    width: 48px;
+    height: 48px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e7e8e9;
+    border-radius: 16px 0px;
+    background-color: white;
+}
+
+.value-display-1{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-buy li {
+    display: flex;
+    margin-top: 24px;
+}
+
+.black-button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    cursor: pointer;
+    padding: 12px 15px 15px 15px;
+    border-radius: 16px 0px;
+    border: 1px solid #221f20;
+    color: #f7f8f9 !important;
+    background-color: #221f20;
+    margin: 0 8px;
+}
+
+.black-button:hover {
+    background-color: #f7f8f9 !important;
+    color: #221f20 !important;
+    border-color: #221f20 !important;
+}
+
+.white-button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    cursor: pointer;
+    padding: 12px 15px 15px 15px;
+    border-radius: 16px 0px;
+    background-color: white;
+    border: 1px solid #221f20;
+    color: #221f20;
+    margin: 0 8px;
+}
+
+.white-button:hover {
+    border: 1px solid #221f20;
+    color: #f7f8f9 !important;
+    background-color: #221f20;
+}
+
+.product-information-type{
+    border-top: 1px solid #e7e8e9;
+    border-bottom: 1px solid #e7e8e9;
+    margin-top: 48px;
+    padding: 40px 0 16px 0;
+}
+
+.product-information{
+    border-bottom: 1px solid #e7e8e9;
+    padding: 24px 0;
+    min-height: 130px;
+}

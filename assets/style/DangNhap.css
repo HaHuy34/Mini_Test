@@ -1,0 +1,85 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6c6d70;
+    text-align: center;
+}
+
+.login-main {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-top: 46px;
+    width: 100%;
+    height: auto;   
+}
+
+.login {
+    flex: 0 0 480px;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.text-center{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: #221f20;
+    margin-bottom: 10px;
+}
+
+.form-login{
+    margin: 24px 30px 0 30px;
+    width: 390px;
+    max-width: 100%;
+}
+
+.input-card{
+    border: 1px solid #E7E8E9;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 14px;
+    color: #E7E8E9 !important;
+    width: 100%;
+    height: 48px;
+    line-height: 16px;
+    margin-bottom: 24px;
+}
+
+.black-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 16px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #221f20;
+    color: #f7f8f9;
+    border: 1px solid #221F20;
+    margin-top: 30px;
+}
+
+.black-button:hover {
+    background-color: #f7f8f9 !important;
+    color: #221f20 !important;
+    border-color: #221f20 !important;
+}
+
+.lines{
+    width: 1px;
+    height: 300px;
+    border-left: 1px solid #e7e8e9;
+}
+
+.SignUp {
+    flex: 0 0 480px;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+
